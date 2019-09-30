@@ -1,0 +1,103 @@
+# ------------------------------------------------------------------
+#   The first group of params can be adjusted 
+#   on the configuration screen, too
+# ------------------------------------------------------------------
+
+# Full-screen mode [0...1]
+  [fullscreen] 0
+
+# Screen resolution [0...9]
+# 0 = auto, 1 = 800x600, 2 = 1024x768
+# 3 = 1152x864, 4 = 1280x960, 5 = 1280x1024
+# 6 = 1360x768, 7 = 1400x1050, 8 = 1440x900, 9=1680x1050
+  [res_type] 1
+
+# Level of details [1...4]
+# 1 = best performance, 4 = best appearance
+  [detail_level] 1
+
+# Language code
+# en_GB = English etc.
+  [language] en_GB
+
+# Sound volume [0...100]
+# Sounds are the terrain effects or the pickup noise.
+  [sound_volume] 90
+
+# Volume of the background music [0...100]
+  [music_volume] 20
+
+# ------------------------------------------------------------------
+#   The second group of params must be adjusted in this file.
+# ------------------------------------------------------------------
+
+# Framerate limit
+# 0 = unlimited, default: 60
+  [framerate] 60
+
+# Forward clipping distance
+# Controls how far ahead of the camera the course
+# is rendered. Larger values mean that more of the course is
+# rendered, resulting in slower performance. Decreasing this 
+# value is an effective way to improve framerates.
+  [forward_clip_distance] 75
+
+# Backward clipping distance
+# Some objects aren't yet clipped to the view frustum, 
+# so this value is used to control how far up the course these 
+# objects are drawn.
+  [backward_clip_distance] 20
+
+# Field of View of the camera
+  [fov] 60
+
+# Bpp mode - bits per pixel
+# Controls the color depth of the OpenGL window
+# 16 = 16 bpp, 32 = 32 bpp,
+# 0 (or any other) = use current bpp setting of operating system,
+  [bpp_mode] 0
+
+# Tree detail distance
+# Controls how far up the course the trees are drawn crosswise.
+  [tree_detail_distance] 20
+
+# Tux sphere divisions
+# Controls how detailed the character is drawn
+  [tux_sphere_divisions] 10
+
+# Tux shadow sphere divisions
+# The same but for the shadow of the character
+  [tux_shadow_sphere_div] 3
+
+# Detail level of the course
+# This param is used for the quadtree and controls the
+# LOD of the algorithm. 
+  [course_detail_level] 75
+
+# Font type [0...2]
+# 0 = always arial-like font,
+# 1 = papercut font on the menu screens
+# 2 = papercut font for the hud display, too
+  [use_papercut_font] 1
+
+# Cursor type [0...1]
+# 0 = normal cursor (arrow), 1 = icicle
+  [ice_cursor] 0
+
+# Draw full skybox [0...1]
+# A normal skybox consists of 6 textures. In Tuxracer
+# 3 textures are invisible (top, bottom and back).
+# These textures needn't be drawn.
+  [full_skybox] 0
+
+# Select the music:
+# (the racing music is defined by a music theme)
+  [menu_music] start_1
+  [credits_music] credits_1
+  [config_music] options_1
+
+# Use sqare root of scale factors for menu screens [0...1]
+# Experimental: these factors reduce the effect of screen scaling.
+# The widgets are closer to their default sizes.
+  [use_quad_scale] 0
+

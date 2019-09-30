@@ -1,0 +1,5 @@
+# list of fonts
+
+*[name] normal [file] std.ttf
+*[name] bold [file] stdbold.ttf
+*[name] pc20 [file] pc_20.ttf
